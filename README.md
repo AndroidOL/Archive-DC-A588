@@ -2,6 +2,10 @@ Unpack filename: A588_ubuntu20.04_20230202-135921_V1.0.img
 
 Loader: /Archive-DC-A588/image-unpack/Android/MiniLoaderAll.bin
 
+Project:
+
+ - https://github.com/Lemon1151/ubuntu-rockchip/
+
 Note: How to flash the image from Releases:  
 **Note:** Please enter LOADER mode, <span style="color:red;">not</span> MASKROM mode!  
 **Note:** Please enter LOADER mode, <span style="color:red;">not</span> MASKROM mode!  
