@@ -1,0 +1,149 @@
+root@ztl:/home/ztl/extract-dtb/park# dumpimage -l /tmp/fit1.itb
+FIT description: FIT Image with ATF/OP-TEE/U-Boot/MCU
+Created:         Tue Aug 23 12:20:10 2022
+ Image 0 (uboot)
+  Description:  U-Boot
+  Created:      Tue Aug 23 12:20:10 2022
+  Type:         Standalone Program
+  Compression:  uncompressed
+  Data Size:    1260792 Bytes = 1231.24 KiB = 1.20 MiB
+  Architecture: AArch64
+  Load Address: 0x00200000
+  Entry Point:  unavailable
+  Hash algo:    sha256
+  Hash value:   049cc47b1128f52d1657ccdb5a0190bc328fb8338d8984da2cd26c623677c77a
+ Image 1 (atf-1)
+  Description:  ARM Trusted Firmware
+  Created:      Tue Aug 23 12:20:10 2022
+  Type:         Firmware
+  Compression:  uncompressed
+  Data Size:    190240 Bytes = 185.78 KiB = 0.18 MiB
+  Architecture: AArch64
+  OS:           ARM Trusted Firmware
+  Load Address: 0x00040000
+  Hash algo:    sha256
+  Hash value:   806278dba1e145e7d1395547ddf72155d794ea0f14ec0006ebb528898b9342c0
+ Image 2 (atf-2)
+  Description:  ARM Trusted Firmware
+  Created:      Tue Aug 23 12:20:10 2022
+  Type:         Firmware
+  Compression:  uncompressed
+  Data Size:    28672 Bytes = 28.00 KiB = 0.03 MiB
+  Architecture: AArch64
+  OS:           ARM Trusted Firmware
+  Load Address: 0x000f0000
+  Hash algo:    sha256
+  Hash value:   c00c7fd75b913cf44d12a27e172513124eaeec71b4448b41aa1c295c05907b3f
+ Image 3 (atf-3)
+  Description:  ARM Trusted Firmware
+  Created:      Tue Aug 23 12:20:10 2022
+  Type:         Firmware
+  Compression:  uncompressed
+  Data Size:    20480 Bytes = 20.00 KiB = 0.02 MiB
+  Architecture: AArch64
+  OS:           ARM Trusted Firmware
+  Load Address: 0xff100000
+  Hash algo:    sha256
+  Hash value:   71c3a5841b733b001fe1defcc4d268af37dab96c503c4c71c9c5daa714d3fdd5
+ Image 4 (atf-4)
+  Description:  ARM Trusted Firmware
+  Created:      Tue Aug 23 12:20:10 2022
+  Type:         Firmware
+  Compression:  uncompressed
+  Data Size:    8192 Bytes = 8.00 KiB = 0.01 MiB
+  Architecture: AArch64
+  OS:           ARM Trusted Firmware
+  Load Address: 0xff001000
+  Hash algo:    sha256
+  Hash value:   2301cf73be91bb638ecd9c296d6674b9d52696a3825745070c92e21e79c8be24
+ Image 5 (optee)
+  Description:  OP-TEE
+  Created:      Tue Aug 23 12:20:10 2022
+  Type:         Firmware
+  Compression:  uncompressed
+  Data Size:    461200 Bytes = 450.39 KiB = 0.44 MiB
+  Architecture: AArch64
+  OS:           Unknown OS
+  Load Address: 0x08400000
+  Hash algo:    sha256
+  Hash value:   4ed9cd20b57f71e3b751bc9c0129d74c371e5633ed32a89c6ef42b7a22b59fa2
+ Image 6 (fdt)
+  Description:  U-Boot dtb
+  Created:      Tue Aug 23 12:20:10 2022
+  Type:         Flat Device Tree
+  Compression:  uncompressed
+  Data Size:    7829 Bytes = 7.65 KiB = 0.01 MiB
+  Architecture: AArch64
+  Hash algo:    sha256
+  Hash value:   c07f4a4d713c2dde198a1c4fc7a980a98f5dc97665e3171dc7c319d7846dc381
+ Default Configuration: 'conf'
+ Configuration 0 (conf)
+  Description:  rk3588-evb
+  Kernel:       unavailable
+  Firmware:     atf-1
+  FDT:          fdt
+  Loadables:    uboot
+                atf-2
+                atf-3
+                atf-4
+                optee
+  Sign algo:    sha256,rsa2048:dev
+  Sign value:   unavailable
+  Timestamp:    unavailable
+root@ztl:/home/ztl/extract-dtb/park# 
+root@ztl:/home/ztl/extract-dtb/park# dumpimage -l /tmp/fit4.itb 
+FIT description: U-Boot FIT source file for arm
+Created:         Mon Jan 30 08:18:52 2023
+ Image 0 (fdt)
+  Description:  unavailable
+  Created:      Mon Jan 30 08:18:52 2023
+  Type:         Flat Device Tree
+  Compression:  uncompressed
+  Data Size:    158667 Bytes = 154.95 KiB = 0.15 MiB
+  Architecture: AArch64
+  Load Address: 0xffffff00
+  Hash algo:    sha256
+  Hash value:   004c79252301a6ff771e4f43e637f543644aafbd42c04bf27da6926bd9d35f13
+ Image 1 (kernel)
+  Description:  unavailable
+  Created:      Mon Jan 30 08:18:52 2023
+  Type:         Kernel Image
+  Compression:  uncompressed
+  Data Size:    34632192 Bytes = 33820.50 KiB = 33.03 MiB
+  Architecture: AArch64
+  OS:           Linux
+  Load Address: 0xffffff01
+  Entry Point:  0xffffff01
+  Hash algo:    sha256
+  Hash value:   deca799f77404f568f876442724bd4122e026a6abbc199a9f6c82ad96ca8832f
+ Image 2 (ramdisk)
+  Description:  unavailable
+  Created:      Mon Jan 30 08:18:52 2023
+  Type:         RAMDisk Image
+  Compression:  uncompressed
+  Data Size:    9182786 Bytes = 8967.56 KiB = 8.76 MiB
+  Architecture: AArch64
+  OS:           Linux
+  Load Address: 0xffffff02
+  Entry Point:  unavailable
+  Hash algo:    sha256
+  Hash value:   a1cbbb10b64a0a21d74fba28826b59fd884f14919240ae2179f58a3703ca0cbb
+ Image 3 (resource)
+  Description:  unavailable
+  Created:      Mon Jan 30 08:18:52 2023
+  Type:         Multi-File Image
+  Compression:  uncompressed
+  Data Size:    197632 Bytes = 193.00 KiB = 0.19 MiB
+  Hash algo:    sha256
+  Hash value:   21572fa8f7352106073cecbd240d4f87fdddb92b54b0ec78e8e9fb99dc22581a
+ Default Configuration: 'conf'
+ Configuration 0 (conf)
+  Description:  unavailable
+  Kernel:       kernel
+  Init Ramdisk: ramdisk
+  FDT:          fdt
+  Sign algo:    sha256,rsa2048:dev
+  Sign padding: pss
+  Sign value:   unavailable
+  Timestamp:    unavailable
+root@ztl:/home/ztl/extract-dtb/park# 
