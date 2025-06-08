@@ -1,0 +1,38 @@
+root@ztl:/home/ztl# dmesg | grep gpu
+[    2.713785] vdd_gpu_s0: supplied by vcc5v0_sys
+[    2.714015] vdd_gpu_s0: 550 <--> 950 mV at 750 mV, enabled
+[    3.271838] rockchip-pm-domain fd8d8000.power-management:power-controller: Looking up gpu-supply from device tree
+[    3.271864] rockchip-pm-domain fd8d8000.power-management:power-controller: Looking up gpu-supply property in node /power-management@fd8d8000/power-controller failed
+[    3.272229] mali fb000000.gpu: Kernel DDK version g12p0-01eac0
+[    3.272400] mali fb000000.gpu: Looking up mali-supply from device tree
+[    3.272731] mali fb000000.gpu: Looking up mem-supply from device tree
+[    3.273013] mali fb000000.gpu: Looking up mali-supply from device tree
+[    3.273085] vdd_gpu_s0: could not add device link fb000000.gpu: -EEXIST
+[    3.273091] vdd_gpu_s0: Failed to create debugfs directory
+[    3.273214] mali fb000000.gpu: Looking up mem-supply from device tree
+[    3.273240] vdd_gpu_s0: could not add device link fb000000.gpu: -EEXIST
+[    3.273246] vdd_gpu_s0: Failed to create debugfs directory
+[    3.273532] mali fb000000.gpu: Looking up mali-supply from device tree
+[    3.273560] vdd_gpu_s0: could not add device link fb000000.gpu: -EEXIST
+[    3.273566] vdd_gpu_s0: Failed to create debugfs directory
+[    3.274131] mali fb000000.gpu: leakage=26
+[    3.274198] mali fb000000.gpu: Looking up mali-supply from device tree
+[    3.274225] debugfs: Directory 'fb000000.gpu-mali' with parent 'vdd_gpu_s0' already present!
+[    3.275740] mali fb000000.gpu: pvtm=941
+[    3.275802] mali fb000000.gpu: pvtm-volt-sel=5
+[    3.277126] mali fb000000.gpu: avs=0
+[    3.277747] W : [File] : drivers/gpu/arm/bifrost/platform/rk/mali_kbase_config_rk.c; [Line] : 136; [Func] : kbase_platform_rk_init(); power-off-delay-ms not available.
+[    3.278135] mali fb000000.gpu: GPU hardware issue table may need updating:
+[    3.278151] mali fb000000.gpu: GPU identified as 0x7 arch 10.8.6 r0p0 status 0
+[    3.278263] mali fb000000.gpu: No priority control manager is configured
+[    3.278279] mali fb000000.gpu: No memory group manager is configured
+[    3.278316] mali fb000000.gpu: Protected memory allocator not available
+[    3.279531] mali fb000000.gpu: Couldn't find power_model DT node matching 'arm,mali-simple-power-model'
+[    3.279549] mali fb000000.gpu: Error -22, no DT entry: mali-simple-power-model.static-coefficient = 1*[0]
+[    3.279778] mali fb000000.gpu: Error -22, no DT entry: mali-simple-power-model.dynamic-coefficient = 1*[0]
+[    3.280005] mali fb000000.gpu: Error -22, no DT entry: mali-simple-power-model.ts = 4*[0]
+[    3.280235] mali fb000000.gpu: Error -22, no DT entry: mali-simple-power-model.thermal-zone = ''
+[    3.283619] mali fb000000.gpu: Using configured power model mali-lodx-power-model, and fallback mali-simple-power-model
+[    3.283828] mali fb000000.gpu: l=10000 h=85000 hyst=5000 l_limit=0 h_limit=800000000 h_table=0
+[    3.285063] mali fb000000.gpu: Probed as mali0
+[    3.390421] I : [File] : drivers/gpu/arm/mali400/mali/linux/mali_kernel_linux.c; [Line] : 405; [Func] : mali_module_init(); svn_rev_string_from_arm of this mali_ko is '', rk_ko_ver is '5', built at '15:38:43', on 'Nov  9 2022'.
