@@ -5,7 +5,7 @@ Loader: /Archive-DC-A588/image-unpack/Android/MiniLoaderAll.bin
 More:
 
  - https://github.com/Lemon1151/ubuntu-rockchip/
-     (Ubuntu Desktop / Server with 22.04 / 24.04 WORK)
+ --  (Ubuntu Desktop / Server with 22.04 / 24.04 WORK)
 
 Note: How to flash the image from Releases:  
 **Note:** Please enter LOADER mode, <span style="color:red;">not</span> MASKROM mode!  
